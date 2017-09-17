@@ -15,6 +15,14 @@
 
 	<dependencies>
 
+		<!-- link backend -->
+		<dependency>
+			<groupId>net.sbai</groupId>
+			<artifactId>onlinebackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
 
 		<!-- javaee api -->
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
@@ -44,17 +52,17 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-		
-			<!-- JSTL -->
+
+
+		<!-- JSTL -->
 
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
-		
+
+
 	</dependencies>
 
 	<build>
