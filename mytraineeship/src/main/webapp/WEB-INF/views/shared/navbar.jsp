@@ -20,7 +20,7 @@
 				<li id="contact"><a href="${contextRoot}/contact">Contact
 						Us</a></li>
 
-				</li id="listProducts">
+				<li id="listProducts">
 				<li><a href="${contextRoot}/show/all/products">View
 						Products</a></li>
 
