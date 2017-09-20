@@ -14,6 +14,21 @@ public class CategoryDAOImpl implements CategoryDAO {
 
 	private static List<Category> categories = new ArrayList<>();
 	
+	static {
+		Category category = new Category();
+		category.setId(1);
+		category.setName("portable");
+		category.setDescription("cc");
+		category.setImageURL("cat.png");
+		categories.add(category);
+		
+	 category = new Category();
+		category.setId(2);
+		category.setName("service");
+		category.setDescription("cc");
+		category.setImageURL("cat.png");
+		categories.add(category);
+	}
 	
 	
 	@Override

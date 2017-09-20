@@ -1,5 +1,9 @@
 package net.sbai.onlinebackend.dto;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Category {
 	
 	
@@ -48,6 +52,8 @@ public class Category {
 	/*
 	 * Private fields
 	 */
+	@Id
+	
 	private int id;
 
 	private String name;
