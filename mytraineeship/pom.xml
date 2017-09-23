@@ -8,24 +8,22 @@
 	<name>mytraineeship Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
+	<!-- Version information will be stored here -->
 	<properties>
 		<javaee.version>7.0</javaee.version>
 		<spring.version>4.3.6.RELEASE</spring.version>
-		<spring.security.version>4.2.2.RELEASE</spring.security.version>
 	</properties>
 
 	<dependencies>
 
-		<!-- link backend -->
+		<!-- Link backend project -->
 		<dependency>
 			<groupId>net.sbai</groupId>
 			<artifactId>onlinebackend</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
-
-
-	<!-- JAVA EE -->
+		<!-- JAVA EE -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
@@ -42,17 +40,6 @@
 		</dependency>
 
 		<!-- SPRING -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -68,31 +55,7 @@
 			<version>1.2</version>
 		</dependency>
 
-		<!-- Spring webflow -->
-		<dependency>
-			<groupId>org.springframework.webflow</groupId>
-			<artifactId>spring-webflow</artifactId>
-			<version>2.4.4.RELEASE</version>
-		</dependency>
-		
-		<!-- SPRING SECURITY -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-			<version>${spring.security.version}</version>
-		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>${spring.security.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-taglibs</artifactId>
-			<version>${spring.security.version}</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<!-- Updated for the latest version of JAVA -->
@@ -105,7 +68,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-</plugins>
+		</plugins>
 
 		<finalName>mytraineeship</finalName>
 	</build>
