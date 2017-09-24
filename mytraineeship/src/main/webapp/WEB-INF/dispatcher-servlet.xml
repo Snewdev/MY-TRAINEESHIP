@@ -11,7 +11,7 @@
    ">
 
 
-	<context:component-scan base-package="net.sbai.mytraineeship.controller" />
+	<context:component-scan base-package="net.sbai.mytraineeship" />
 	<context:component-scan base-package="net.sbai.onlinebackend" />
 
 
