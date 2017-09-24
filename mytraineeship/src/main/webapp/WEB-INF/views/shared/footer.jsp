@@ -1,15 +1,14 @@
-       
-        <div class="container">
+    <div class="container footer">
 
         <hr>
-       
+
+        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>tunisie telecom by me</p>
+                    <p>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </footer>
 
     </div>
-    <!-- /.container -->

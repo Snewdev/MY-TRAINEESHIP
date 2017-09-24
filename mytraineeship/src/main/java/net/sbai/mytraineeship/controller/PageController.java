@@ -1,4 +1,5 @@
 package net.sbai.mytraineeship.controller;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -123,11 +124,19 @@ public class PageController {
 	}
 	
 	
-	
-	
+	/* having similar mapping to our flow id*/
+	@RequestMapping(value = "/register")
+	public ModelAndView register() {		
+		ModelAndView mv = new ModelAndView("page");		
+		mv.addObject("title","About Us");
+		return mv;				
+	}		
 	
 	
 	
 	
 	
 }
+	
+	
+	
