@@ -19,17 +19,25 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Tunisie Telecom ${title}</title>
+<title>Online Shopping - ${title}</title>
 
 <script>
 	window.menu = '${title}';
+	
+	window.contextRoot = '${contextRoot}'
+	
 </script>
 
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap readable theme -->
+<!-- Bootstrap Readable Theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+
+<!-- Bootstrap DataTables -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
 
 <!-- Custom CSS -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -51,39 +59,53 @@
 		<%@include file="./shared/navbar.jsp"%>
 
 		<!-- Page Content -->
+
 		<div class="content">
-			<!-- Home -->
+			
+			<!-- Loading the home content -->
 			<c:if test="${userClickHome == true }">
 				<%@include file="home.jsp"%>
 			</c:if>
-			<!-- ABOUT -->
+
+			<!-- Load only when user clicks about -->
 			<c:if test="${userClickAbout == true }">
 				<%@include file="about.jsp"%>
 			</c:if>
-			<!-- Contact -->
+
+			<!-- Load only when user clicks contact -->
 			<c:if test="${userClickContact == true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
 			
-			<!-- Products -->
+			<!-- Load only when user clicks contact -->
 			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
 				<%@include file="listProducts.jsp"%>
-			</c:if>
+			</c:if>			
 			
-		</div>
-		<!-- Footer -->
 
+		</div>
+
+
+		<!-- Footer comes here -->
 		<%@include file="./shared/footer.jsp"%>
 
+
+
 		<!-- jQuery -->
-
-
 		<script src="${js}/jquery.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
-
-		<!--Self code JavaScript -->
+		
+		<!-- DataTable Plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!-- DataTable Bootstrap Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		
+		
+		
+		<!-- Self coded javascript -->
 		<script src="${js}/myapp.js"></script>
 
 	</div>
