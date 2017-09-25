@@ -1,6 +1,6 @@
 package net.sbai.onlinebackend.config;
 
-	import java.util.Properties;
+import java.util.Properties;
 
 import javax.sql.DataSource;
 
@@ -26,7 +26,7 @@ public class HibernateConfig {
 	private final static String DATABASE_PASSWORD = "";
 	
 	// dataSource bean will be available
-	@Bean
+	@Bean("dataSource")
 	public DataSource getDataSource() {
 		
 		BasicDataSource dataSource = new BasicDataSource();
@@ -36,8 +36,7 @@ public class HibernateConfig {
 		dataSource.setUrl(DATABASE_URL);
 		dataSource.setUsername(DATABASE_USERNAME);
 		dataSource.setPassword(DATABASE_PASSWORD);
-				
-		
+						
 		return dataSource;
 		
 	}
@@ -67,7 +66,8 @@ public class HibernateConfig {
 		properties.put("hibernate.dialect", DATABASE_DIALECT);		
 		properties.put("hibernate.show_sql", "true");
 		properties.put("hibernate.format_sql", "true");
-		
+
+		properties.put("hibernate.hbm2ddl.auto", "update");
 		
 		return properties;
 	}
