@@ -19,10 +19,10 @@
 <table id="cart" class="table table-hover table-condensed">
 				<thead>
 		<tr>
-			<th style="width:50%">Product</th>
-			<th style="width:10%">Price</th>
-			<th style="width:8%">Quantity</th>
-			<th style="width:22%" class="text-center">Subtotal</th>
+			<th style="width:50%">Produit</th>
+			<th style="width:10%">Prix</th>
+			<th style="width:8%">Quantité</th>
+			<th style="width:22%" class="text-center">Total</th>
 			<th style="width:10%"></th>
 		</tr>
 	</thead>
@@ -37,7 +37,7 @@
 					<div class="col-sm-10">
 						<h4 class="nomargin">${cartLine.product.name}
 							<c:if test="${cartLine.available == false }">
-								<strong class="unavailable">(Not Available)</strong>
+								<strong class="unavailable">(Indisponible)</strong>
 							</c:if>
 						</h4>
 						<p>Brand - ${cartLine.product.brand}</p>
@@ -64,10 +64,11 @@
 			<td class="text-center"><strong>Total &#8377; ${userModel.cart.grandTotal}</strong></td>
 		</tr>
 		<tr>
-			<td><a href="${contextRoot}/show/all/products" class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left"></span> Continue Shopping</a></td>
+			<td><a href="${contextRoot}/show/all/products" class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left"></span> Continuer Shopping</a></td>
 			<td colspan="2" class="hidden-xs"></td>
 			<td class="hidden-xs text-center"><strong>Total &#8377; ${userModel.cart.grandTotal}</strong></td>
-			<td><a href="#" class="btn btn-success btn-block">Checkout <span class="glyphicon glyphicon-chevron-right"></span></a></td>
+			<td><a href="#" class="btn btn-success btn-block">Check-out
+ <span class="glyphicon glyphicon-chevron-right"></span></a></td>
 		</tr>
 	</tfoot>
 </table>		
@@ -81,7 +82,7 @@
 				<div class="text-center">
 				
 					
-					<h1>Your cart is empty!</h1>
+					<h1>Votre panier est vide!</h1>
 				
 				</div>
 			

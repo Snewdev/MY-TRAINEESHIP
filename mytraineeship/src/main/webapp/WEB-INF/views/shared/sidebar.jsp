@@ -1,4 +1,5 @@
-<p class="lead">Shop Name</p>
+<p class="lead"><img class="slide-image" src="${images}/tt.jpg"
+									alt=""></p>
 
 
 

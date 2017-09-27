@@ -19,7 +19,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Shopping - ${title}</title>
+<title>Tunisie Telecom - ${title}</title>
 
 <script>
 	window.menu = '${title}';
@@ -59,8 +59,7 @@
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<a class="navbar-brand" href="${contextRoot}/home">Online
-						Shopping</a>
+					<a class="navbar-brand" href="${contextRoot}/home">Tunisie Telecom</a>
 				</div>
 			</div>
 		</nav>
@@ -103,7 +102,7 @@
 						<div class="panel panel-primary">
 
 							<div class="panel-heading">
-								<h4>Login</h4>
+								<h4>Connecter</h4>
 							</div>
 
 							<div class="panel-body">
@@ -118,7 +117,7 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="password" class="col-md-4 control-label">Password:
+										<label for="password" class="col-md-4 control-label">Mot de passe:
 										</label>
 										<div class="col-md-8">
 											<input type="password" name="password" id="password"
@@ -137,7 +136,7 @@
 							</div>
 							<div class="panel-footer">
 								<div class="text-right">
-									New User - <a href="${contextRoot}/register">Register Here</a>
+									 <a href="${contextRoot}/register">S'inscrire</a>
 								</div>
 							</div>
 						</div>

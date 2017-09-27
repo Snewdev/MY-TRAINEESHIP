@@ -28,7 +28,7 @@
 <link href="${css}/myapp.css" rel="stylesheet">
 
 
-<title>Online Shopping - ${title}</title>
+<title>Tunisie Telecom - ${title}</title>
 
 </head>
 
@@ -40,7 +40,7 @@
 	        <div class="container">
 	            <!-- Brand and toggle get grouped for better mobile display -->
 	            <div class="navbar-header">
-	                <a class="navbar-brand" href="${contextRoot}/home">Home</a>
+	                <a class="navbar-brand" href="${contextRoot}/home">Accueil</a>
 	            </div>
 			</div>
 		</nav>

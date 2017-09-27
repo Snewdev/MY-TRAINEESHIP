@@ -27,7 +27,7 @@
 						<ol class="breadcrumb">
 
 
-							<li><a href="${contextRoot}/home">Home</a></li>
+							<li><a href="${contextRoot}/home">Accueil</a></li>
 							<li class="active">All Products</li>
 
 
@@ -43,8 +43,8 @@
 						<ol class="breadcrumb">
 
 
-							<li><a href="${contextRoot}/home">Home</a></li>
-							<li class="active">Category</li>
+							<li><a href="${contextRoot}/home">Accueil</a></li>
+							<li class="active">Catégorie</li>
 							<li class="active">${category.name}</li>
 
 
@@ -74,10 +74,10 @@
 								
 									<tr>
 										<th></th>
-										<th>Name</th>
-										<th>Brand</th>
-										<th>Price</th>
-										<th>Qty. Available</th>
+										<th>Nom</th>
+										<th>Marque</th>
+										<th>Prix</th>
+										<th>Qty. Disponible</th>
 										<th></th>
 									
 									</tr>
@@ -89,10 +89,10 @@
 								
 									<tr>
 										<th></th>
-										<th>Name</th>
-										<th>Brand</th>
-										<th>Price</th>
-										<th>Qty. Available</th>
+										<th>Nom</th>
+										<th>Marque</th>
+										<th>Prix</th>
+										<th>Qty. Disponible</th>
 										<th></th>
 									
 									</tr>
